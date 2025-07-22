@@ -34,7 +34,7 @@ New-AzVm `
 -SubnetName $subnetName `
 -VirtualNetworkName $virtualNetworkName `
 -SecurityGroupName $networkSecurityGroupName `
--SshKeyName $sshKeyName `
+-SshKeyValue $sshKeyPublicKey `
 -Zone 1
 
 $vmName2 = "matebox-az2"
@@ -48,5 +48,5 @@ New-AzVm `
 -SubnetName $subnetName `
 -VirtualNetworkName $virtualNetworkName `
 -SecurityGroupName $networkSecurityGroupName `
--SshKeyName $sshKeyName `
+-SshKeyValue $sshKeyPublicKey `
 -Zone 2
